@@ -1,0 +1,430 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif+JP");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Serif JP", sans-serif;
+}
+body {
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+}
+/*ヘッダー*/
+header {
+    width: 100%;
+    height: auto;
+}
+main {
+    flex: 1;
+}
+.header-items {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+.header-logo {
+    width: calc(100% - 30%);
+    margin: 0 auto;
+    border-bottom: 1px solid black;
+}
+.header-logo img {
+    width: 200px;
+    height: auto;
+    border: black;
+}
+.header-titles {
+    width: calc(100% - 30%);
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-serch {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header-serch i {
+    position: absolute;
+    left: 1.2rem;
+}
+input[type="serch"] {
+    width: 100%;
+    min-height: 40px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 20px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+}
+.header-nav {
+    color: white;
+    display: flex;
+    list-style: none;
+}
+.header-nav li {
+    width: 120px;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    color: black;
+}
+.header-nav a {
+    color: black;
+    text-decoration: none;
+}
+/*メイン画面*/
+main {
+    width: 100vw;
+    height: auto;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+/*ログインページ*/
+.login-form {
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.login-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.login-icon span {
+    font-size: small;
+    color: red;
+}
+.login-post-area {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.login-post-area span {
+    font-size: small;
+    color: red;
+}
+.login-button-area {
+    width: 100%;
+    text-align: center;
+}
+
+.login-button-area button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin-top: 10px;
+    appearance: none;
+    border: 0;
+    border-radius: 50px;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    width: 100px;
+    height: 50px;
+}
+.login-button-area button:hover {
+    background: darkgray;
+}
+
+.forgot-password {
+    text-align: end;
+    padding-right: 55px;
+    margin-top: 10px;
+}
+.sign-up {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*新規アカウントページ*/
+.signup-form {
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.signup-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.signup-post-area {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.signup-post-area span {
+    font-size: small;
+    color: red;
+}
+.signup-button-area button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    appearance: none;
+    border: 0;
+    border-radius: 50px;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    width: 100px;
+    height: 50px;
+}
+.signup-button-area {
+    width: 100%;
+    text-align: center;
+}
+.signup-button-area button:hover {
+    background: darkgray;
+}
+.signup-button-area button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px #5c8ce4;
+}
+/*新規登録完了ページ*/
+.register-box {
+    width: calc(100% - 30%);
+    height: 50vh;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.register-text {
+    text-align: center;
+}
+/*トップページ*/
+.new-upload-box {
+    width: 100%;
+}
+.new-upload-area {
+    width: 100%;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.new-upload-area::-webkit-scrollbar {
+    display: none;
+}
+.new-upload-area ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 1300px;
+    cursor: grab;
+    padding: 50px;
+}
+.new-upload-area ul:active {
+    cursor: grabbing;
+}
+.new-upload-area li {
+    width: 200px;
+    list-style: none;
+    border-radius: 20px;
+    box-shadow: 0px 15px 12px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px;
+}
+.new-upload-box h1 {
+    text-align: center;
+}
+.music-box img {
+    width: 200px;
+    height: 200px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.liked {
+    color: red;
+}
+.user-id {
+    display: flex;
+    justify-content:space-between;
+}
+.like-counter {
+    font-size: 5px;
+}
+/*投稿ページ*/
+.music-post-box {
+    width: calc(100% - 30%);
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow-wrap: break-word;
+}
+.music-post-box h1 {
+    text-align: center;
+}
+.music-post-box p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.center {
+    display: flex;
+}
+.left {
+    width: 50%;
+    text-align: center;
+}
+#preview {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0px 0px 3px gray;
+}
+.right {
+    padding-right: 10px;
+    width: 50%;
+}
+.post-area {
+    margin-top: 20px;
+}
+.post-area i {
+    margin-left: 2px;
+    margin-right: 5px;
+}
+.post-area span {
+    font-size: small;
+    color: red;
+}
+.file-name {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.confirm-area {
+    margin-top: 20px;
+}
+input[type="text"] {
+    width: 100%;
+    height: 50px;
+    font-size: large;
+}
+input[type="file"] {
+    display: none;
+}
+input[type="password"] {
+    width: 100%;
+    height: 50px;
+    font-size: large;
+}
+input[type="email"] {
+    width: 100%;
+    height: 50px;
+    font-size: large;
+}
+label {
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: 1px solid black;
+}
+label:hover {
+    background-color: #f9fafb;
+}
+label:focus {
+    outline: 2px solid rgba(0, 0, 0, 0.1);
+    outline-offset: 2px;
+}
+textarea {
+    resize: none;
+    width: 100%;
+    height: 300px;
+    font-size: large;
+    letter-spacing: 1px;
+}
+.button-area {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.button-area button {
+    width: 200px;
+    height: 80px;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0.9375em;
+    border: 1px solid black;
+    text-decoration: none;
+}
+
+.music-confirm-box {
+    width: calc(100% - 30%);
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 2px solid black;
+    border-radius: 20px;
+    overflow-wrap: break-word;
+}
+.music-confirm-box h1 {
+    text-align: center;
+}
+.music-confirm-box p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.button-area-back {
+    text-align: center;
+    margin-top: 30px;
+}
+.send {
+    width: 100px;
+    height: 40px;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0.9375em;
+    border: 1px solid black;
+    text-decoration: none;
+}
+.back {
+    width: 100px;
+    height: 40px;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0.9375em;
+    border: 1px solid black;
+    text-decoration: none;
+}
+
+/*音楽投稿完了ページ*/
+.music-complete-box {
+    width: calc(100% - 30%);
+    height: 50vh;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.music-complete-text {
+    text-align: center;
+}
+
+/*フッダー*/
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #efefef;
+    text-align: center;
+    font-weight: lighter;
+}
+.footer-nav {
+    bottom: 0px;
+}
